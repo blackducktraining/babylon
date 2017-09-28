@@ -51,7 +51,6 @@ after_success:
   - 'if [ "$JOB" = "test-coverage" ]; then bash <(curl -s https://codecov.io/bash) -f coverage/coverage-final.json -F babylon ; fi'
 
 notifications:
-  email: false
   slack: babeljs:5Wy4QX13KVkGy9CnU0rmvgeK
 
 branches:
